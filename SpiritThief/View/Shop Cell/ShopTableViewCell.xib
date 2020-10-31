@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="storeTableCell" id="KGk-i7-Jjw" customClass="ShopTableViewCell" customModule="SpiritThief" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvO-zd-vQn">
+                        <rect key="frame" x="240" y="11" width="64" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="64" id="cHE-sA-fYh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label asdfg asdf asdf asdf asdf " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11B-p4-Fhl">
+                        <rect key="frame" x="52" y="11" width="180" height="34"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDe-iL-ISf">
+                        <rect key="frame" x="16" y="11" width="28" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="Bub-dJ-V3F"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zDe-iL-ISf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="2LR-Wp-zhl"/>
+                    <constraint firstItem="11B-p4-Fhl" firstAttribute="leading" secondItem="zDe-iL-ISf" secondAttribute="trailing" constant="8" id="4Ui-Lx-r7a"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="11B-p4-Fhl" secondAttribute="bottom" id="9GE-hm-Ur8"/>
+                    <constraint firstItem="zDe-iL-ISf" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="HKf-ga-v2D"/>
+                    <constraint firstItem="kvO-zd-vQn" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="TIC-hq-Kyl"/>
+                    <constraint firstItem="kvO-zd-vQn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Vcz-D7-zHc"/>
+                    <constraint firstItem="kvO-zd-vQn" firstAttribute="leading" secondItem="11B-p4-Fhl" secondAttribute="trailing" constant="8" id="XGI-pt-s8F"/>
+                    <constraint firstItem="11B-p4-Fhl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Xsl-2X-xAh"/>
+                    <constraint firstItem="zDe-iL-ISf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="aua-yr-u81"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="kvO-zd-vQn" secondAttribute="bottom" id="xDd-Ap-nye"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="priceLable" destination="kvO-zd-vQn" id="ruG-3U-gj1"/>
+                <outlet property="storeFlagLabel" destination="zDe-iL-ISf" id="bOZ-Dq-bBf"/>
+                <outlet property="storeNameLabel" destination="11B-p4-Fhl" id="K5f-F5-Xda"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

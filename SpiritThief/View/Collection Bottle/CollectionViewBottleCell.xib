@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionViewBottleCell" id="gTV-IL-0wX" customClass="CollectionViewBottleCell" customModule="SpiritThief" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="220"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zok-Um-VSe">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="220"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottle image place holder" translatesAutoresizingMaskIntoConstraints="NO" id="Gx3-nO-6jo">
+                                <rect key="frame" x="4" y="4" width="152" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Gx3-nO-6jo" secondAttribute="height" multiplier="1:1" constant="4" id="6UK-1l-4oB"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ic-0A-PXJ" customClass="Gradient" customModule="SpiritThief" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="160" width="160" height="60"/>
+                                <color key="backgroundColor" red="0.34901960784313724" green="0.38431372549019605" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="0.52549019607843139" green="0.5607843137254902" blue="0.64313725490196072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="0.34901960780000002" green="0.38431372549999998" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bunnahabhain 12" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWB-KY-Zet">
+                                <rect key="frame" x="4" y="160" width="152" height="56"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3ic-0A-PXJ" secondAttribute="trailing" id="4OV-er-43W"/>
+                            <constraint firstItem="Gx3-nO-6jo" firstAttribute="leading" secondItem="Zok-Um-VSe" secondAttribute="leading" constant="4" id="5qn-OU-8EC"/>
+                            <constraint firstItem="Gx3-nO-6jo" firstAttribute="top" secondItem="Zok-Um-VSe" secondAttribute="top" constant="4" id="9l7-Sz-Emw"/>
+                            <constraint firstItem="SWB-KY-Zet" firstAttribute="top" secondItem="Gx3-nO-6jo" secondAttribute="bottom" constant="8" id="D41-ye-iQr"/>
+                            <constraint firstItem="SWB-KY-Zet" firstAttribute="leading" secondItem="Zok-Um-VSe" secondAttribute="leading" constant="4" id="Mhu-9W-gqd"/>
+                            <constraint firstAttribute="bottom" secondItem="3ic-0A-PXJ" secondAttribute="bottom" id="Mt9-2Y-Qfc"/>
+                            <constraint firstAttribute="trailing" secondItem="SWB-KY-Zet" secondAttribute="trailing" constant="4" id="TQ0-XW-cHm"/>
+                            <constraint firstAttribute="trailing" secondItem="Gx3-nO-6jo" secondAttribute="trailing" constant="4" id="Tga-rv-NZ0"/>
+                            <constraint firstItem="3ic-0A-PXJ" firstAttribute="leading" secondItem="Zok-Um-VSe" secondAttribute="leading" id="ZWj-hf-jGj"/>
+                            <constraint firstItem="3ic-0A-PXJ" firstAttribute="top" secondItem="Gx3-nO-6jo" secondAttribute="bottom" constant="8" id="cgQ-Th-Cjo"/>
+                            <constraint firstAttribute="bottom" secondItem="SWB-KY-Zet" secondAttribute="bottom" constant="4" id="hV8-qM-DZx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Zok-Um-VSe" secondAttribute="bottom" id="5wg-5J-Xes"/>
+                <constraint firstItem="Zok-Um-VSe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8p9-Cj-XqW"/>
+                <constraint firstItem="Zok-Um-VSe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DWQ-AV-4tT"/>
+                <constraint firstAttribute="trailing" secondItem="Zok-Um-VSe" secondAttribute="trailing" id="PYt-1g-RFX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="bottleImage" destination="Gx3-nO-6jo" id="sp2-Rn-Pqw"/>
+                <outlet property="bottleNameLabel" destination="SWB-KY-Zet" id="BeU-gv-pss"/>
+                <outlet property="container" destination="Zok-Um-VSe" id="d9v-AO-qtJ"/>
+                <outlet property="labelContainer" destination="3ic-0A-PXJ" id="zRK-pR-gi9"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="48.575712143928037"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bottle image place holder" width="43" height="96"/>
+    </resources>
+</document>

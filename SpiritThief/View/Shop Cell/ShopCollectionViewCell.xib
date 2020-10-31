@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="storeCell" id="gTV-IL-0wX" customClass="ShopCollectionViewCell" customModule="SpiritThief" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="110" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKX-w1-ZPt">
+                        <rect key="frame" x="4" y="4" width="102" height="112"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="51X-cT-Px0" userLabel="Store Icon">
+                                <rect key="frame" x="6" y="0.0" width="90" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="iZ9-zi-jK3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="144.44" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfw-iB-Q3z">
+                                <rect key="frame" x="0.0" y="66" width="68" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="05h-C3-rlm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="0.18431372549019609" green="0.71372549019607845" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store Name asdf asdf sdv fv sdf sdfg sdfg sdfg " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3D-ea-fpT">
+                                <rect key="frame" x="2" y="86" width="98" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kio-vt-PFh">
+                                <rect key="frame" x="101" y="12" width="1" height="88"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="G1r-Xv-cLj"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeY-73-gGX">
+                                <rect key="frame" x="72" y="66" width="24" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="XtR-h9-jTg"/>
+                                    <constraint firstAttribute="width" constant="24" id="f1a-MO-c2k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verified" translatesAutoresizingMaskIntoConstraints="NO" id="KUR-2t-KZ4">
+                                <rect key="frame" x="77" y="44" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="S2G-xu-ARv"/>
+                                    <constraint firstAttribute="height" constant="18" id="ent-Ip-FDQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOLD OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPL-bE-rU0">
+                                <rect key="frame" x="6" y="44.5" width="90" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Acv-je-rSn"/>
+                                    <constraint firstAttribute="height" constant="24" id="dxg-MI-D8L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kio-vt-PFh" firstAttribute="top" secondItem="nKX-w1-ZPt" secondAttribute="top" constant="12" id="0mI-wA-ysv"/>
+                            <constraint firstItem="Kio-vt-PFh" firstAttribute="leading" secondItem="KUR-2t-KZ4" secondAttribute="trailing" constant="6" id="1fs-lW-rhm"/>
+                            <constraint firstItem="TeY-73-gGX" firstAttribute="top" secondItem="51X-cT-Px0" secondAttribute="bottom" constant="4" id="20g-sw-gzm"/>
+                            <constraint firstAttribute="trailing" secondItem="P3D-ea-fpT" secondAttribute="trailing" constant="2" id="3hk-et-7ve"/>
+                            <constraint firstItem="P3D-ea-fpT" firstAttribute="leading" secondItem="nKX-w1-ZPt" secondAttribute="leading" constant="2" id="3oB-h0-OxU"/>
+                            <constraint firstItem="51X-cT-Px0" firstAttribute="leading" secondItem="nKX-w1-ZPt" secondAttribute="leading" constant="6" id="J8Q-HX-KWp"/>
+                            <constraint firstItem="P3D-ea-fpT" firstAttribute="top" secondItem="yfw-iB-Q3z" secondAttribute="bottom" constant="2" id="O4R-Nc-Wh5"/>
+                            <constraint firstAttribute="trailing" secondItem="TeY-73-gGX" secondAttribute="trailing" constant="6" id="OeY-qH-e4A"/>
+                            <constraint firstItem="51X-cT-Px0" firstAttribute="top" secondItem="nKX-w1-ZPt" secondAttribute="top" id="P9C-qn-8Bh"/>
+                            <constraint firstItem="TeY-73-gGX" firstAttribute="leading" secondItem="yfw-iB-Q3z" secondAttribute="trailing" constant="4" id="PKY-dy-oPP"/>
+                            <constraint firstAttribute="trailing" secondItem="Kio-vt-PFh" secondAttribute="trailing" id="PZd-CQ-ZzI"/>
+                            <constraint firstAttribute="bottom" secondItem="P3D-ea-fpT" secondAttribute="bottom" id="XRG-fs-Xbp"/>
+                            <constraint firstItem="XPL-bE-rU0" firstAttribute="centerY" secondItem="nKX-w1-ZPt" secondAttribute="centerY" id="Z9R-hx-FcA"/>
+                            <constraint firstAttribute="bottom" secondItem="Kio-vt-PFh" secondAttribute="bottom" constant="12" id="b6q-hP-PwE"/>
+                            <constraint firstItem="yfw-iB-Q3z" firstAttribute="top" secondItem="KUR-2t-KZ4" secondAttribute="bottom" constant="4" id="bYg-NO-pGD"/>
+                            <constraint firstAttribute="trailing" secondItem="51X-cT-Px0" secondAttribute="trailing" constant="6" id="fR2-XZ-wAU"/>
+                            <constraint firstItem="XPL-bE-rU0" firstAttribute="centerX" secondItem="nKX-w1-ZPt" secondAttribute="centerX" id="uvT-w5-Yzj"/>
+                            <constraint firstItem="yfw-iB-Q3z" firstAttribute="top" secondItem="51X-cT-Px0" secondAttribute="bottom" constant="4" id="vf4-TF-6bL"/>
+                            <constraint firstItem="yfw-iB-Q3z" firstAttribute="leading" secondItem="nKX-w1-ZPt" secondAttribute="leading" id="wPZ-sn-wQT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="nKX-w1-ZPt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="FCx-iL-FCA"/>
+                <constraint firstAttribute="bottom" secondItem="nKX-w1-ZPt" secondAttribute="bottom" constant="4" id="KTa-0n-q5B"/>
+                <constraint firstAttribute="trailing" secondItem="nKX-w1-ZPt" secondAttribute="trailing" constant="4" id="PB8-bp-6YD"/>
+                <constraint firstItem="nKX-w1-ZPt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="uFz-W2-a5T"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="flagLabel" destination="TeY-73-gGX" id="4q3-s6-Xab"/>
+                <outlet property="price" destination="yfw-iB-Q3z" id="0fx-XQ-DyC"/>
+                <outlet property="soldout" destination="XPL-bE-rU0" id="mgh-th-UJ5"/>
+                <outlet property="storeIcon" destination="51X-cT-Px0" id="M4h-CG-sra"/>
+                <outlet property="storeName" destination="P3D-ea-fpT" id="QGD-3L-5uU"/>
+                <outlet property="verifiedIcon" destination="KUR-2t-KZ4" id="YW5-Yx-m5x"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="verified" width="26" height="26"/>
+    </resources>
+</document>
